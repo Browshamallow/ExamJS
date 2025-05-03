@@ -1,0 +1,83 @@
+/* Dashboard global layout */
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f8;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Contenu principal */
+  .dashboard-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Titre principal */
+  .dashboard-content h2 {
+    color: #6b004e;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  
+  /* Grille fixe 2x2 */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    justify-items: center;
+  }
+  
+  /* Carte de dashboard */
+  .dashboard-card {
+    background: linear-gradient(to right, #6b004e, #cf1c4a);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Effet hover */
+  .dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Icônes dans les cartes */
+  .dashboard-card .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Couleurs spécifiques par fonctionnalité */
+  .icon.file { color: #ffe6f0; }
+  .icon.check { color: #eaffea; }
+  .icon.calendar { color: #e1f0ff; }
+  .icon.graduation { color: #ffe9f7; }
+  
+  /* Titres et sous-titres */
+  .dashboard-card h4 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .dashboard-card p {
+    font-size: 15px;
+  }
+  
+  /* Responsive : une colonne sur petits écrans */
+  @media (max-width: 768px) {
+    .dashboard-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

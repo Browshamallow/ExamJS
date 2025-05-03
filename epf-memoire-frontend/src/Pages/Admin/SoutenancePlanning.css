@@ -1,0 +1,74 @@
+.soutenance-planning {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.soutenance-planning h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #991f48;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+select,
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.jury-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.jury-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #7a1f80;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #5f1866;
+}
+
+.message {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #444;
+  text-align: center;
+}

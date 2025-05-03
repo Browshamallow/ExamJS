@@ -1,0 +1,97 @@
+/* Variables pour les couleurs du logo EPF Africa */
+:root {
+    --epf-purple: #5f2c82;
+    --epf-red: #e91e63;
+    --epf-gradient: linear-gradient(90deg, var(--epf-purple), var(--epf-red));
+    --sidebar-width: 250px;
+    --header-height: 60px;
+    --background-light: #f8f9fa;
+    --text-dark: #333;
+    --text-light: #fff;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+  }
+  
+  .app-layout {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    width: var(--sidebar-width);
+    background: var(--epf-gradient);
+    color: var(--text-light);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar h2 {
+    margin-top: 0;
+    font-size: 1.4em;
+  }
+  
+  .sidebar nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  
+  .sidebar nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  
+  .sidebar nav a svg {
+    margin-right: 8px;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  
+  .header {
+    height: var(--header-height);
+    background: var(--epf-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header img.logo {
+    height: 40px;
+    margin-right: 15px;
+  }
+  
+  .header .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .user-info span {
+    margin-left: 8px;
+  }
+  
+  .page-content {
+    padding: 20px;
+    background-color: white;
+    flex: 1;
+    overflow-y: auto;
+  }
+  

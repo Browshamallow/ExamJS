@@ -1,0 +1,105 @@
+.supervision-container {
+  padding: 30px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.supervision-container h2 {
+  text-align: center;
+  color: #6b004e;
+  margin-bottom: 25px;
+}
+
+.filtre-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.filtre-icon {
+  color: #cf1c4a;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.memoire-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.memoire-table th,
+.memoire-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.memoire-table th {
+  background-color: #6b004e;
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.pdf-link {
+  color: #cf1c4a;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.badge.en_attente {
+  background-color: orange;
+  color: white;
+}
+
+.badge.valide {
+  background-color: green;
+  color: white;
+}
+
+.badge.refuse {
+  background-color: red;
+  color: white;
+}
+
+.btn-valider,
+.btn-refuser {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+}
+
+.btn-valider {
+  background-color: #28a745;
+}
+
+.btn-refuser {
+  background-color: #dc3545;
+  margin-left: 6px;
+}

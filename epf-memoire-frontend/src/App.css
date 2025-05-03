@@ -1,0 +1,154 @@
+:root {
+  --primary-red: #c91d34;
+  --primary-purple: #6b1b7a;
+  --text-dark: #222;
+  --background: #f9f9f9;
+  --header-height: 70px;
+  --sidebar-width: 200px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--background);
+  color: var(--text-dark);
+}
+
+/* Header */
+.main-header {
+  position: fixed;
+  top: 0;
+  left: var(--sidebar-width);
+  right: 0;
+  height: var(--header-height);
+  background: linear-gradient(to right, var(--primary-purple), var(--primary-red));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-header .logo img {
+  height: 40px;
+}
+
+.main-header .logo h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.user-info strong {
+  color: #ffd1d1;
+}
+
+.user-info button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.user-info button:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100vh;
+  background-color: var(--primary-purple);
+  color: white;
+  padding-top: var(--header-height);
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: var(--primary-red);
+}
+
+/* Main Content */
+.main {
+  margin-left: var(--sidebar-width);
+  margin-top: var(--header-height);
+  padding: 2rem;
+}
+
+/* Buttons */
+.button-primary, .btn-primary {
+  background-color: var(--primary-red);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button-primary:hover, .btn-primary:hover {
+  background-color: var(--primary-purple);
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.page-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Met à jour le contenu principal pour ne pas passer sous le header */
+.page-content {
+  flex: 1;
+  margin-top: var(--header-height); /* Évite que le header cache le contenu */
+  margin-left: var(--sidebar-width); /* Évite que la sidebar cache le contenu */
+  padding: 2rem;
+  overflow-y: auto;
+
+  /* Centrage du contenu */
+  display: flex;
+  justify-content:left;
+  align-items: start; /* ou 'center' si tu veux aussi centrer verticalement */
+  min-height: calc(100vh - var(--header-height));
+  box-sizing: border-box;
+}

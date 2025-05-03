@@ -1,0 +1,92 @@
+.session-planning {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.session-planning h2 {
+  text-align: center;
+  color: #7c1d6f;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.session-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.session-form input,
+.session-form select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+.session-form input:focus,
+.session-form select:focus {
+  border-color: #b9002f;
+  outline: none;
+}
+
+.session-form button {
+  grid-column: 1 / -1;
+  padding: 12px;
+  background-color: #b9002f;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.session-form button:hover {
+  background-color: #7c1d6f;
+}
+
+.session-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.session-table th,
+.session-table td {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.session-table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: 600;
+}
+
+.session-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .session-form {
+    grid-template-columns: 1fr;
+  }
+
+  .session-table th,
+  .session-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
